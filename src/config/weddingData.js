@@ -11,9 +11,6 @@ export const weddingData = {
   bride: "Umidaxon",
   monogram: "Sh & U",
 
-  // ─── Родители ───
-  groomParents: "Baxodir va Almagul Bekchanovlar",
-
   // ─── Дата и время ───
   date: "2026-11-03T18:00:00",
   year: 2026,
@@ -25,8 +22,7 @@ export const weddingData = {
 
   // ─── Программа свадьбы ───
   timeline: [
-    { time: "17:30", label: "Mehmonlarni kutib olish", desc: "Tantanali musiqa va xush kelibsiz qahvaxonasi" },
-    { time: "18:00", label: "Nikoh to'yi boshlanishi", desc: "Barcha aziz mehmonlar zalda jam bo'lishi" },
+    { time: "18:00", label: "Mehmonlarni kutib olish va nikoh to'yi", desc: "Barcha aziz mehmonlarni kutib olish va tantanali to'y boshlanishi" },
     { time: "18:30", label: "Kelin-kuyov kirish marosimi", desc: "Farishtalar va gullar yog'dusi hamrohligida" },
     { time: "19:00", label: "Tantanali dasturxon", desc: "Lazzatli taomlar va samimiy tilaklar" },
     { time: "20:00", label: "San'at dasturi va tabriklar", desc: "Milliy va estrada kuy-qo'shiqlari, raqslar" },
@@ -41,7 +37,6 @@ export const weddingData = {
     address: "Do'stlik ko'chasi, 3-uy, Yangihayot tumani, Toshkent shahri",
     landmark: "Mo'ljal: Qipchoq metro bekati yaqinida",
     googleMapsUrl: "https://maps.google.com/?q=Shedevr+Yangihayot+Tashkent",
-    // Точная ссылка на Яндекс Карты, предоставленная пользователем
     yandexMapsUrl: "https://yandex.uz/maps/10335/tashkent/house/do_stlik_ko_chasi_3/YkAYdAZiQEABQFprfX14dXpjZQ==/",
     gis2Url: "https://2gis.uz/tashkent/search/Shedevr%20Yangihayot",
     phone: "+998 90 123 45 67",

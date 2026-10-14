@@ -42,22 +42,8 @@ export const InvitationLetter = () => {
 
         <FloralDivider className="w-36 mx-auto my-6" />
 
-        {/* Parents section (Groom's parents only) */}
-        {weddingData.groomParents && (
-          <div className="max-w-sm mx-auto mt-6 text-center">
-            <div className="p-4 rounded-2xl bg-ivory-warm/80 border border-gold/30 shadow-sm">
-              <span className="text-[11px] tracking-widest uppercase text-walnut-muted block mb-1">
-                To'y egalari (Ota-onasi)
-              </span>
-              <p className="font-display text-base sm:text-lg text-burgundy font-semibold">
-                {weddingData.groomParents}
-              </p>
-            </div>
-          </div>
-        )}
-
         {/* Signature */}
-        <p className="font-script text-2xl sm:text-3xl text-burgundy mt-7">
+        <p className="font-script text-3xl sm:text-4xl text-burgundy mt-6">
           {weddingData.invitationSignature}
         </p>
       </div>
