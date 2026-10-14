@@ -29,12 +29,36 @@ export const AudioPlayer = ({ autoPlayTrigger }) => {
       } catch (e) {}
     };
 
+    // Stop audio immediately when user leaves site or minimizes/switches tab
+    const handleVisibilityChange = () => {
+      if (document.hidden || document.visibilityState === 'hidden') {
+        audio.pause();
+        setIsPlaying(false);
+      }
+    };
+
+    const handlePageHide = () => {
+      audio.pause();
+      setIsPlaying(false);
+    };
+
+    const handleBeforeUnload = () => {
+      audio.pause();
+    };
+
     audio.addEventListener('loadedmetadata', handleLoadedMetadata);
     audio.addEventListener('ended', handleEnded);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('pagehide', handlePageHide);
+    window.addEventListener('beforeunload', handleBeforeUnload);
 
     return () => {
+      audio.pause();
       audio.removeEventListener('loadedmetadata', handleLoadedMetadata);
       audio.removeEventListener('ended', handleEnded);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pagehide', handlePageHide);
+      window.removeEventListener('beforeunload', handleBeforeUnload);
     };
   }, [startTime]);
 
