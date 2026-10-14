@@ -41,23 +41,10 @@ export const weddingData = {
     address: "Do'stlik ko'chasi, 3-uy, Yangihayot tumani, Toshkent shahri",
     landmark: "Mo'ljal: Qipchoq metro bekati yaqinida",
     googleMapsUrl: "https://maps.google.com/?q=Shedevr+Yangihayot+Tashkent",
-    yandexMapsUrl: "https://yandex.uz/maps/?text=Shedevr+Yangihayot+tumani+Do'stlik+3+Toshkent",
+    // Точная ссылка на Яндекс Карты, предоставленная пользователем
+    yandexMapsUrl: "https://yandex.uz/maps/10335/tashkent/house/do_stlik_ko_chasi_3/YkAYdAZiQEABQFprfX14dXpjZQ==/",
     gis2Url: "https://2gis.uz/tashkent/search/Shedevr%20Yangihayot",
     phone: "+998 90 123 45 67",
-  },
-
-  // ─── Дресс-код ───
-  dressCode: {
-    title: "Kiyinish uslubi (Dress-code)",
-    description: "Bizning bayramimizni yanada nafis qilish uchun quyidagi mayin va oqshom ranglarini tavsiya etamiz:",
-    colors: [
-      { name: "Sutli oq / Ivory", hex: "#FFF9F5", border: "#E2D0A8" },
-      { name: "Pudrali pushti", hex: "#F5C6CB", border: "#D4919A" },
-      { name: "Shaftolirang", hex: "#FDE8E8", border: "#E8A5AE" },
-      { name: "Yumshoq oltin", hex: "#C9A96E", border: "#A88C55" },
-      { name: "Klassik quyuq", hex: "#4A3728", border: "#6B5B4F" },
-    ],
-    note: "Iltimos, butunlay oq yoki butunlay qora liboslardan saqlanishingizni so'raymiz.",
   },
 
   // ─── Тексты приглашения ───
@@ -85,7 +72,7 @@ export const weddingData = {
   audio: {
     src: "/audio/maher-zain-for-the-rest-of-my-life.mp3",
     title: "Maher Zain — For The Rest Of My Life",
-    startTime: 20, // Воспроизведение с 20-й секунды
+    startTime: 20, // 20-я секунда
     volume: 0.35,  // Мягкая ненавязчивая громкость
     enabled: true,
   },

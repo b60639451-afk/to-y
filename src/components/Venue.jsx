@@ -114,6 +114,30 @@ export const Venue = () => {
             </button>
           </div>
 
+          {/* Embedded Interactive Map Preview */}
+          <div className="relative w-full h-52 sm:h-60 rounded-2xl overflow-hidden border border-gold/30 shadow-inner my-3">
+            <iframe
+              title="Shedevr Yangihayot Xaritasi"
+              src="https://yandex.uz/map-widget/v1/?text=Toshkent+Yangihayot+Do%27stlik+3&z=16"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allowFullScreen={true}
+              className="w-full h-full"
+            />
+            {/* Quick click-through overlay to open exact link */}
+            <div className="absolute bottom-2 right-2">
+              <a
+                href={venue.yandexMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-gold/40 text-[11px] font-semibold text-burgundy shadow-md hover:bg-gold/10 transition-all"
+              >
+                <span>Yandex'da ochish ↗</span>
+              </a>
+            </div>
+          </div>
+
           {/* Map Link Buttons with Official Brand Logos */}
           <div className="pt-2 flex flex-col sm:flex-row gap-2.5">
             {/* Google Maps Button */}
@@ -128,7 +152,7 @@ export const Venue = () => {
               <span className="text-walnut font-medium">Google Maps</span>
             </a>
 
-            {/* Yandex Maps Button */}
+            {/* Yandex Maps Button (direct user link) */}
             <a
               href={venue.yandexMapsUrl}
               target="_blank"
